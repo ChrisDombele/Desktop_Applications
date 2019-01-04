@@ -1,0 +1,135 @@
+/* Global */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: #a0c3d0;
+}
+
+/* Side Nav */
+.sidemenu {
+    height: 100%;
+    width: 160px;
+    margin-top: 60px;
+    /*needs this to be on side of window*/
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #262626;
+    overflow-x: hidden;
+}
+
+.sidemenu a {
+    padding:  8px 8px 8px 8px;
+    text-align: left;
+    color: #ffffff;
+    size: 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #484848;
+}
+
+.sidemenu a:hover {
+    background: #b7b7b7;
+    
+}
+
+/* Main Content */
+main {
+    margin-left: 140px;
+    margin-top: 60px;
+    padding: 0px 10px;
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+/* Search Bar */
+.title {
+    float: right;
+    right: 20px;
+    position: relative;
+    color: white;
+}
+
+.searchBar {
+    background: #2b303b;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    line-height: 60px;
+    left: 0px 
+}
+
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-1 input#search {
+    width: 300px;
+    height: 60px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; */
+    /* border-radius: 5px; */
+}
+
+
+/* adds the search icon to the search bar */
+.container-1 .icon {
+    position: absolute;
+    top: 0px;
+    margin-left: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+/* Buttons */
+button {
+    width: 100px;
+    height: 60px;
+    background: #50505a;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Removes highlighted line around search bar when in use */
+/* input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+} */
+
+
+/* Things to add
+add button:
+opens a new window to add stuff
+
+remove button:
+to remove one will have to select 
+*/
