@@ -2,6 +2,7 @@ const { app, BrowserWindow, Menu, ipcMain } = require("electron");
 const path = require("path");
 const url = require("url");
 const shell = require("electron").shell; //This is how you add external site online
+const Store = require("./store.js");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -101,6 +102,13 @@ app.on("activate", () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 
+const store = new Store({
+  configName: "user-preferences",
+  list: {}
+});
+
 ipcMain.on("item:add", (event, item) => {
-  mainWin.webContents.send("item:add", item);
+  // mainWin.webContents.send("item:add", item);
+  console.log(item);
+  store.set(item, item);
 });

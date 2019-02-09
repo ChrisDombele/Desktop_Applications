@@ -32,12 +32,4 @@ addButton.addEventListener("click", function(event) {
   addWin.show();
 });
 
-const store = new Store({
-  configName: "user-preferences",
-  list: {}
-});
-
-ipcRenderer.on("item:add", (event, item) => {
-  console.log(item);
-  store.set(item, item);
-});
+// Use store.get to retrieve items from json file here and then display it on a list
