@@ -108,7 +108,6 @@ const store = new Store({
 });
 
 ipcMain.on("item:add", (event, item) => {
-  // mainWin.webContents.send("item:add", item);
-  console.log(item);
+  mainWin.webContents.send("item:add", item);
   store.set(item, item);
 });

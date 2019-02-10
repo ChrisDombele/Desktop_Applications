@@ -12,6 +12,7 @@ class Store {
     // We'll use the `configName` property to set the file name and path.join to bring it all together as a string
     this.path = path.join(userDataPath, opts.configName + ".json");
 
+    // Change this so that the opts.list1,2,3...?
     this.data = parseDataFile(this.path, opts.list);
   }
 
